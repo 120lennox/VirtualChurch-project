@@ -39,3 +39,6 @@
 6. **Documentation and Training**: Document the codebase, deployment process, and any necessary maintenance procedures. Provide training to the church staff or administrators on how to use and manage the application.
 
 Throughout the development process, it's essential to collaborate closely with the church stakeholders, regularly communicate progress, and prioritize tasks based on their feedback and requirements. Additionally, ensure that you follow best practices for security, scalability, and maintainability when developing the application.
+
+# COLLABORATORS
+ 1. Lennox Mountain BED-COM-03-21 
