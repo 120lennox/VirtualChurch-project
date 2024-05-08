@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import SignUpForm from './SignUpForm';
+import SignUpForm from './Singup-form';
+import './signup.css';
 
 const SignUpPage = () => {
   // Define state variables using useState
