@@ -5,12 +5,17 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f5f5f5;
+  background-color:linear-gradient(to right, rgb(184, 225, 238), rgb(80, 127, 141));;
 }
 
 .signup-container {
   width: 300px;
   text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  min-height: 100vh
+
 }
 
 h1 {
@@ -22,6 +27,11 @@ h1 {
 .signup-form {
   display: flex;
   flex-direction: column;
+  background:linear-gradient(to top, rgb(76, 153, 172), rgb(80, 127, 141));
+  padding:30px;
+  border-radius: 5px;
+  box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 label {
@@ -31,7 +41,8 @@ label {
   text-transform: uppercase;
 }
 
-input {
+.signup-form input {
+  display:block;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
