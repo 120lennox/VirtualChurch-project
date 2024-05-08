@@ -30,36 +30,39 @@ const SignUpForm = ({ onSubmit }) => {
   };
 
   return (
+
+    
     <form onSubmit={handleSubmit}>
-      <label htmlFor="fullName">Full Name:</label>
+     <p> <label htmlFor="fullName">Full Name:</label>
       <input
         type="text"
         id="fullName"
         value={fullName}
         onChange={(e) => setFullName(e.target.value)}
-      />
+      /></p>
+
       {errors.fullName && <p>{errors.fullName}</p>}
 
-      <label htmlFor="email">Email:</label>
+     <p> <label htmlFor="email">Email:</label>
       <input
         type="email"
         id="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-      />
+      /></p>
       {errors.email && <p>{errors.email}</p>}
 
       <label htmlFor="password">Password:</label>
-      <input
+     <p> <input
         type="password"
         id="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         ref={passwordRef}
-      />
+      /></p>
       {errors.password && <p>{errors.password}</p>}
 
-      <button type="submit">Sign Up</button>
+     <p> <button type="submit">Sign Up</button></p>
     </form>
   );
 };
