@@ -1,8 +1,47 @@
-import React from "react";
+import React, { useState } from 'react';
+import SignUpForm from './SignUpForm';
 
-function App() {
-  return <div className="flex flex-row w-full h-screen items-center justify-center bg-blue-600">Suiiii!!!!</div>
-    
-}
+const SignUpPage = () => {
+  // Define state variables using useState
+  const [isLoading, setIsLoading] = useState(false);
+  const [message, setMessage] = useState('');
 
-export default App;
+  // Function to handle form submission
+  const handleSignUp = async ({ fullName, email, password }) => {
+    setIsLoading(true);
+
+    try {
+      // Send a POST request to the backend server
+      const response = await fetch('/api/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ fullName, email, password }),
+      });
+
+      // Update the application state based on the response
+      if (response.ok) {
+        setMessage('Sign up successful! Redirecting...');
+        // Redirect to another page or perform other actions
+      } else {
+        setMessage('Sign up failed. Please try again.');
+      }
+    } catch (error) {
+      setMessage('An error occurred. Please try again.');
+    }
+
+    setIsLoading(false);
+  };
+
+  return (
+    <div>
+      <h1>Sign Up</h1>
+      {message && <p>{message}</p>}
+      <SignUpForm onSubmit={handleSignUp} />
+      {/* Implement the "Continue with Google" button later */}
+    </div>
+  );
+};
+
+export default SignUpPage;
