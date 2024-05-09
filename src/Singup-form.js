@@ -7,6 +7,23 @@ const SignUpForm = ({ onSubmit }) => {
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
 
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    switch (name) {
+      case 'fullName':
+        setFullName(value);
+        break;
+      case 'email':
+        setEmail(value);
+        break;
+      case 'password':
+        setPassword(value);
+        break;
+      default:
+        break;
+    }
+  };
   // Create a reference to the password input field
   const passwordRef = useRef();
 
@@ -20,6 +37,7 @@ const SignUpForm = ({ onSubmit }) => {
     if (!email) newErrors.email = 'Email is required.';
     else if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) newErrors.email = 'Invalid email format.';
     if (!password) newErrors.password = 'Password is required.';
+    if(password.length < 8) newErrors.password = 'password must be atleast 8 characters long';
 
     setErrors(newErrors);
 
@@ -31,9 +49,14 @@ const SignUpForm = ({ onSubmit }) => {
 
   return (
     
-
-    <form onSubmit={handleSubmit}>
-      
+    <div className="container">
+      <hearder>
+        <h1>Connect to VCMS</h1>
+        <h2>Create Profile</h2>
+      </hearder>
+      <main>
+        <p>By completing your profile, You'll unlock the full potential of our Platform!!</p>
+            <form onSubmit={handleSubmit}>      
      <p> <label htmlFor="fullName">Full Name:</label>
       <input
         type="text"
@@ -63,8 +86,15 @@ const SignUpForm = ({ onSubmit }) => {
       /></p>
       {errors.password && <p>{errors.password}</p>}
 
-     <p> <button type="submit">Sign Up</button></p>
+     <p> <button type="submit">Create Profile</button></p>
     </form>
+    <p>or</p>
+    <a href="#"> <button>Continue with Google</button></a>
+    </main>
+    <footer>
+    <p>Already have an account? <a href="#">Sign In</a></p>
+    </footer>   
+    </div>
   );
 };
 
