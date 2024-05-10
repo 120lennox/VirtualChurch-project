@@ -1,15 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 1;
-  background-color:linear-gradient(to right, rgb(184, 225, 238), rgb(80, 127, 141));
+  background-color:linear-gradient(to , rgb(224, 232, 235), rgb(98, 196, 231));
 }
 
 .container {
-  width: 300vh;
+  width: 100%;
   text-align: 1;
   display: flex;
   flex-direction: column;
@@ -74,8 +69,8 @@ label {
  input {
   display:block;
   padding: 0.5rem;
-  border: 4px solid #3d4242;
-  border-radius: 4px;
+  border: 1px solid #3d4242;
+  border-radius: 2px;
   margin-bottom: 1rem;
   font-size: 0.9rem;
   outline: none;
