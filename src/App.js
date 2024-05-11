@@ -43,8 +43,8 @@ const SignUpPage = () => {
       <SignUpForm onSubmit={handleSignUp} />
       {/* Implement the "Continue with Google" button later */}
       
-    
-    <p2> </p2>
+    <p>Terms and conditions apply
+    </p>
     
     </div>
     </body>
