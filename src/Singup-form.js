@@ -52,14 +52,15 @@ const SignUpForm = ({ onSubmit }) => {
   return (
      
     <div className="container">
-        <main> 
-          <hearder>
+        
+         
+            <form onSubmit={handleSubmit}>
+               <hearder>
         <h1>Connect to VCMS</h1>
         <h2>Create Profile</h2>
       </hearder>
    
-        <p>By completing your profile, You'll unlock the full potential of our Platform!!</p>
-            <form onSubmit={handleSubmit}>      
+        <p>By completing your profile, You'll unlock the full potential of our Platform!!</p>      
      <p> <label htmlFor="fullName">Full Name:</label>
       <input
         type="text"
@@ -90,13 +91,14 @@ const SignUpForm = ({ onSubmit }) => {
       {errors.password && <p>{errors.password}</p>}
 
      <p> <button type="submit">Create Profile</button></p>
-    </form>
-    <p>or</p>
+     <p>or</p>
     <a href="#"> <button>Continue with Google</button></a>
-    </main>
+
     <footer>
     <p>Already have an account? <a href="#">Sign In</a></p>
-    </footer>   
+    </footer> 
+    </form>
+     
     </div>
   );
 };
