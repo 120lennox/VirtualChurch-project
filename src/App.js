@@ -38,12 +38,14 @@ const SignUpPage = () => {
   return (
     <body>
     <div className= "style">
-      <h1>Sign Up</h1>
+      <h3>Create Your Profile</h3>
       {message && <p>{message}</p>}
       <SignUpForm onSubmit={handleSignUp} />
       {/* Implement the "Continue with Google" button later */}
       
-   
+    
+    <p2> </p2>
+    
     </div>
     </body>
   );

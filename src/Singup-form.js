@@ -58,9 +58,7 @@ const SignUpForm = ({ onSubmit }) => {
                <hearder>
         <h1>Connect to VCMS</h1>
         <h2>Create Profile</h2>
-      </hearder>
-   
-        <p>By completing your profile, You'll unlock the full potential of our Platform!!</p>      
+      </hearder>  
      <p> <label htmlFor="fullName">Full Name:</label>
       <input
         type="text"
