@@ -1,7 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color:linear-gradient(to , rgb(224, 232, 235), rgb(98, 196, 231));
-}
+
 
 .container {
   width: 100%;
@@ -16,13 +13,7 @@ body {
 
 }
 
-.header{
-  text-align: center;
-  padding:20px;
-  background-color: #40586d;
-  color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
+
 
 h1 {
   font-size: 2rem;

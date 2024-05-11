@@ -33,7 +33,9 @@ const SignUpForm = ({ onSubmit }) => {
 
     // Perform basic validation on user input
     const newErrors = {};
+    const fullNameRegex = /^[A-Z][a-z]+\s[A-Z][a-z]+$/;
     if (!fullName) newErrors.fullName = 'Full name is required.';
+    else if (!fullNameRegex.test(fullName))newErrors.fullName ='First and second name should start with a capital letter';
     if (!email) newErrors.email = 'Email is required.';
     else if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) newErrors.email = 'Invalid email format.';
     if (!password) newErrors.password = 'Password is required.';
@@ -48,13 +50,14 @@ const SignUpForm = ({ onSubmit }) => {
   };
 
   return (
-    
+     
     <div className="container">
-      <hearder>
+        <main> 
+          <hearder>
         <h1>Connect to VCMS</h1>
         <h2>Create Profile</h2>
       </hearder>
-      <main>
+   
         <p>By completing your profile, You'll unlock the full potential of our Platform!!</p>
             <form onSubmit={handleSubmit}>      
      <p> <label htmlFor="fullName">Full Name:</label>
