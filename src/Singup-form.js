@@ -59,7 +59,7 @@ const SignUpForm = ({ onSubmit }) => {
         <h1>Connect to VCMS</h1>
         <h2>Create Profile</h2>
       </hearder>  
-     <p className="align-items:left; margin-bottom:15px; align-items:center; "> 
+     <p> 
      <label>Full Name:</label>
       <input
         type="text"
@@ -70,7 +70,7 @@ const SignUpForm = ({ onSubmit }) => {
 
       {errors.fullName && <p>{errors.fullName}</p>}
 
-     <p className='margin-bottom:15px;'> <label htmlFor="email">Email:</label>
+     <p> <label htmlFor="email">Email:</label>
       <input
         type="email"
         id="email"
@@ -80,7 +80,7 @@ const SignUpForm = ({ onSubmit }) => {
       {errors.email && <p>{errors.email}</p>}
 
       <label htmlFor="password">Password:</label>
-     <p className='margin-bottom:15px;'> <input
+     <p> <input
         type="password"
         id="password"
         value={password}
