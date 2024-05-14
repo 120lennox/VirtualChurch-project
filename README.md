@@ -40,5 +40,10 @@
 
 Throughout the development process, it's essential to collaborate closely with the church stakeholders, regularly communicate progress, and prioritize tasks based on their feedback and requirements. Additionally, ensure that you follow best practices for security, scalability, and maintainability when developing the application.
 
+<<<<<<< HEAD
+# collaborators
+Lionel Suluma Bed-com-37-21
+=======
 # COLLABORATORS
  1. Lennox Mountain BED-COM-03-21 
+>>>>>>> f664f8cee26f94cbcbeddfbcfc837f50a9094a7e
