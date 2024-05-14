@@ -57,7 +57,8 @@ const SignUpForm = ({ onSubmit }) => {
         <h2>Connect to VCMS</h2>
         <h3>Create Profile</h3>
       </hearder>  
-     <p> 
+     <p>
+      
      <label>Full Name:</label>
       <input
         type="text"
@@ -86,7 +87,7 @@ const SignUpForm = ({ onSubmit }) => {
         ref={passwordRef}
       /></p>
       {errors.password && <p>{errors.password}</p>}
-      
+    
      <p> <button type="submit">Create Profile</button></p>
      <p>or</p>
      <a href="#"> <button>Continue with Google</button></a>
