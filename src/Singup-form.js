@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 
 const SignUpForm = ({ onSubmit }) => {
-  // Define state variables using useState
+  // Definition of state variables using useState
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -24,14 +24,14 @@ const SignUpForm = ({ onSubmit }) => {
         break;
     }
   };
-  // Create a reference to the password input field
+  // Creation of  a reference to the password input field
   const passwordRef = useRef();
 
   // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Perform basic validation on user input
+    // validating user input, making sure the user inputs the right format on feilds.
     const newErrors = {};
     const fullNameRegex = /^[A-Z][a-z]+\s[A-Z][a-z]+$/;
     if (!fullName) newErrors.fullName = 'Full name is required.';
@@ -52,12 +52,10 @@ const SignUpForm = ({ onSubmit }) => {
   return (
      
     <div className="container">
-        
-         
-            <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
                <hearder>
-        <h1>Connect to VCMS</h1>
-        <h2>Create Profile</h2>
+        <h2>Connect to VCMS</h2>
+        <h3>Create Profile</h3>
       </hearder>  
      <p> 
      <label>Full Name:</label>
@@ -88,14 +86,15 @@ const SignUpForm = ({ onSubmit }) => {
         ref={passwordRef}
       /></p>
       {errors.password && <p>{errors.password}</p>}
+      
+     <p> <button type="submit">Create Profile</button></p>
+     <p>or</p>
+     <a href="#"> <button>Continue with Google</button></a>
 
-     <p className='margin-bottom:15px;'> <button type="submit">Create Profile</button></p>
-     <p className='margin-bottom:15px;'>or</p>
-    <a href="#"> <button>Continue with Google</button></a>
-
-    <footer>
-    <p>Already have an account? <a href="#">Sign In</a></p>
-    </footer> 
+<footer>
+<p>Already have an account? <a href="#">Sign In</a></p>
+</footer> 
+  
     </form>
      
     </div>
@@ -103,3 +102,5 @@ const SignUpForm = ({ onSubmit }) => {
 };
 
 export default SignUpForm;
+         
+            

@@ -38,10 +38,9 @@ const SignUpPage = () => {
   return (
     <body>
     <div className= "style">
-      <h3>Create Your Profile</h3>
+      <h1>Create Your Church Profile</h1>
       {message && <p>{message}</p>}
       <SignUpForm onSubmit={handleSignUp} />
-      {/* Implement the "Continue with Google" button later */}
       
     <p>Terms and conditions apply </p>
    

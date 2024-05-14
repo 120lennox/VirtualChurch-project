@@ -9,15 +9,8 @@
   justify-content: center;
   flex-direction: row;
   z-index:-1;
-  body > .style{
-    width:auto;
-  text-align: center;
-  background-image:linear-gradient(to bottom, rgb(129, 181, 190), rgb(93, 100, 100));
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  }
-h3  {
+ 
+h1  {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #333;
@@ -36,25 +29,36 @@ h3  {
   background-color: #b9dad8;
   margin-bottom: 10%;
   border-radius: 5px;
-  h1 {
-    font-size: 2rem;
+  h2 {
+    font-size: 3dvb;
     margin-bottom: 1rem;
     color: #333;
   }
   
-  h2{
+  h3{
     font-size:2em;
     margin-bottom:10px;
   }
   
-  main{
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    margin-top:20px;
-    border-radius:15px;
-    background-color:linear-gradient(to right, rgb(184, 225, 238), rgb(80, 127, 141));
-  }
+  
+    input::placeholder {
+    
+      padding: 0.2rem;
+      border: 5xp solid #3d4242;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      outline: none;
+
+    }
+    
+    label {
+      
+      font-size: 0.7rem;
+      color: #666;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+  } 
   
   p{
     margin-bottom:15px
@@ -71,22 +75,10 @@ h3  {
     height: 110vh;
   }
   
-  label {
-    font-size: 0.8rem;
-    color: #666;
-    text-transform: uppercase;
-  }
   
-   input::placeholder {
-    font-style:normal;
-    padding: 0.2rem;
-    border: 5xp solid #3d4242;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    outline: none;
-  }
   
+  
+   
 
   button {
     padding: 0.5rem;
@@ -110,7 +102,7 @@ h3  {
     font-weight:bold;
     margin-bottom:10px;
   }
-}
 
+}
 
 
