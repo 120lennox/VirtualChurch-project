@@ -42,7 +42,7 @@ const SignUpForm = ({ onSubmit }) => {
     else if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) newErrors.email = 'Invalid email format.';
     if (!password) newErrors.password = 'Password is required.';
     if(password.length < 8) newErrors.password = 'password must be atleast 8 characters long';
-    if(confirmPassword != password) newErrors.confirmPassword = 'Password does not match';
+    if(confirmPassword !== password) newErrors.confirmPassword = 'Password does not match';
 
     // If no errors, call the parent component function
     if (Object.keys(newErrors).length === 0) {
@@ -59,8 +59,9 @@ const SignUpForm = ({ onSubmit }) => {
         <h3>Create Profile</h3>
       </hearder>  
      
+     <div className="input_space">
     <p>
-     <label>Full Name:</label>
+     <label htmlFor="FullName-L">Full Name: </label>
       <input
         type="text"
         id="fullName"
@@ -70,8 +71,8 @@ const SignUpForm = ({ onSubmit }) => {
 
       {errors.fullName && <p>{errors.fullName}</p>}
 
-     <p> <label htmlFor="email">Email:</label>
-      <input
+     <p> <label htmlFor="Email-L">Email: </label>
+      <input 
         type="email"
         id="email"
         value={email}
@@ -79,7 +80,7 @@ const SignUpForm = ({ onSubmit }) => {
       /></p>
       {errors.email && <p>{errors.email}</p>}
 
-      <p><label htmlFor="password">Password:</label>
+      <p><label htmlFor="Password-L">Password: </label>
       <input
         type="password"
         id="password"
@@ -89,7 +90,7 @@ const SignUpForm = ({ onSubmit }) => {
       /></p>
       {errors.password && <p>{errors.password}</p>}
 
-      <p><label htmlFor="confirmPassword">Confirm Password</label>
+      <p><label htmlFor="confirmPassword-L">Confirm Password: </label>
       <input
         type="password"
         id="confirm-password"
@@ -101,13 +102,13 @@ const SignUpForm = ({ onSubmit }) => {
      <p> <button type="submit">Create Profile</button></p>
      <p>or</p>
      <a href="#"> <button>Continue with Google</button></a>
-
+     </div>
 <footer>
 <p>Already have an account? <a href="#">Sign In</a></p>
 </footer> 
-  
+   
     </form>
-     
+    
     </div>
   );
 };

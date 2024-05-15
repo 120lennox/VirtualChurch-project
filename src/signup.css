@@ -6,9 +6,7 @@
   text-align:center ;
   background-image:linear-gradient(to bottom, rgb(129, 181, 190), rgb(62, 65, 65));
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  z-index:-1;
+  justify-content: center;  
  
 h1  {
   font-size: 2rem;
@@ -20,13 +18,13 @@ h1  {
 
 .container {
   width: 80vh;
-  height: 80vh;
+  height: 85vh;
   box-sizing: border-box;
   display: inline-flex;
   flex-direction: column;
   justify-content:center;
   align-items:center;
-  background-color: #b9dad8;
+  background-color: #8fadab;
   margin-bottom: 10%;
   border-radius: 5px;
   h2 {
@@ -41,31 +39,16 @@ h1  {
   }
   
   
-    input::placeholder {
     
-      padding: 0.2rem;
-      border: 5xp solid #3d4242;
-      border-radius: 4px;
-      margin-bottom: 1rem;
-      font-size: 0.9rem;
-      outline: none;
-
-    }
-    
-    label {
-      
-      font-size: 0.7rem;
-      color: #666;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-  } 
-  
   p{
     margin-bottom:15px
     
   }
   
-  form {
+  
+  }
+  
+  .container form {
     display: flex;
     flex-direction: column;
     color:linear-gradient(to top, rgb(76, 153, 172), rgb(80, 127, 141));
@@ -73,12 +56,68 @@ h1  {
     box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
     width: 80vh;
     height: 110vh;
+    align-items: center ;
   }
-  
-  
-  
-  
-   
+    
+      
+    
+    
+     #fullName{
+      padding: 0.5rem 2.2rem;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      outline:none;      
+      background-color: #d0d6d6;
+      padding-bottom: 0.4rem;
+      justify-content: left;
+            
+    }
+    
+    #email{
+      padding: 0.5rem 3rem;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      outline:none;      
+      background-color: #d0d6d6;
+      padding-bottom: 0.4rem;
+      justify-content: left;
+            
+    }
+
+
+    #password{
+      padding: 0.5rem 2.2rem;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      outline:none;      
+      background-color: #d0d6d6;
+      padding-bottom: 0.4rem;
+      justify-content: left;
+            
+    }
+
+    #confirm-password{
+      padding: 0.5rem;
+      border-radius: 3px;
+      font-size: 0.7rem;
+      outline:none;      
+      background-color: #d0d6d6;
+      padding-bottom: 0.4rem;
+      justify-content: left;
+            
+    }
+
+
+    label {      
+      font-size: 0.7rem;
+      color:black;
+      text-transform: uppercase;      
+      background-color: #bbc0c0;
+      padding:0.5rem 0.4rem;
+      
+      
+         
+  } 
 
   button {
     padding: 0.5rem;
@@ -103,6 +142,6 @@ h1  {
     margin-bottom:10px;
   }
 
-}
+
 
 
