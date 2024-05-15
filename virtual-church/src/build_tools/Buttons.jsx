@@ -1,8 +1,6 @@
 export default function Buttons(props){
-    const type = props.type
-    const value = props.value
-
+    const {label, children, width} = props;
     return(
-        <input className="px-4 w-20 cursor-pointer bg-slate-600 border-r-4" type={type} value={value} />
+       <button className={`rounded-md bg-slate-300 text-cyan-700 ${width}`} >{label || children}</button> 
     )
 }

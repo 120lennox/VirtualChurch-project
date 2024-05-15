@@ -8,6 +8,8 @@ function App() {
   return (
     <div>
       <InputBox type="text" placeholder="Enter email" />
+      <br />
+      <Buttons label="Login" width="w-40" />
       
     </div>
   );
