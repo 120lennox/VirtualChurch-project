@@ -5,21 +5,23 @@ const SignUpForm = ({ onSubmit }) => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmpassword] = useState('');
   const [errors, setErrors] = useState({});
 
-
+//Function to handle user input change.
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     switch (name) {
       case 'fullName':
         setFullName(value);
         break;
-      case 'email':
+      case 'email': 
         setEmail(value);
         break;
       case 'password':
         setPassword(value);
         break;
+        
       default:
         break;
     }
@@ -40,8 +42,7 @@ const SignUpForm = ({ onSubmit }) => {
     else if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) newErrors.email = 'Invalid email format.';
     if (!password) newErrors.password = 'Password is required.';
     if(password.length < 8) newErrors.password = 'password must be atleast 8 characters long';
-
-    setErrors(newErrors);
+    if(confirmPassword != password) newErrors.confirmPassword = 'Password does not match';
 
     // If no errors, call the parent component function
     if (Object.keys(newErrors).length === 0) {
@@ -57,8 +58,8 @@ const SignUpForm = ({ onSubmit }) => {
         <h2>Connect to VCMS</h2>
         <h3>Create Profile</h3>
       </hearder>  
-     <p>
-      
+     
+    <p>
      <label>Full Name:</label>
       <input
         type="text"
@@ -78,8 +79,8 @@ const SignUpForm = ({ onSubmit }) => {
       /></p>
       {errors.email && <p>{errors.email}</p>}
 
-      <label htmlFor="password">Password:</label>
-     <p> <input
+      <p><label htmlFor="password">Password:</label>
+      <input
         type="password"
         id="password"
         value={password}
@@ -87,6 +88,15 @@ const SignUpForm = ({ onSubmit }) => {
         ref={passwordRef}
       /></p>
       {errors.password && <p>{errors.password}</p>}
+
+      <p><label htmlFor="confirmPassword">Confirm Password</label>
+      <input
+        type="password"
+        id="confirm-password"
+        value={confirmPassword}
+        onChange={(e) => setConfirmpassword(e.target.value)}
+        /></p>
+      {errors.confirmPassword && <p>{errors.confirmPassword}</p>} 
     
      <p> <button type="submit">Create Profile</button></p>
      <p>or</p>
