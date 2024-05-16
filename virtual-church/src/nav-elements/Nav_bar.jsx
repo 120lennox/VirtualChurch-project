@@ -6,10 +6,10 @@ export default function Nav_Bar(){
     return(
         <div>
             <header className="w-full shadow-sm bg-slate-50" >
-                <section className="max-w-2xl flex">
-                    <a href="#">virtualchurch</a>
-                    <nav>
-                        <ul>
+                <section className="max-w-2xl flex flex-row justify-between items-center">
+                    <Link>virtualchurch</Link>
+                    <nav className="text-3xl">
+                        <ul className="flex flex-row ">
                             <li>
                                 <Link to="/about">About us</Link>
                             </li>
