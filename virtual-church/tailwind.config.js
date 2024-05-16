@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        "Montserrat":["Montserrat", "sans-serif"]
+        "Montserrat":["Montserrat", "sans-serif"],
+        "Roboto":["Roboto", "sans-serif"],
+        "Pacifico":["Pacifico", "cursive"],
+        "poppins":["Poppins", "sans-serif"]
       }
     },
   },

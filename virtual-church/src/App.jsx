@@ -4,15 +4,16 @@ import{Routes, Route} from "react-router-dom"
 import Buttons from './build_tools/Buttons';
 import InputBox from './build_tools/InputBox';
 import Nav_Bar from './nav-elements/Nav_bar';
+import Home from './nav-elements/Home';
 
 function App() {
   return (
-    <section className="flex sm:flex-col md:flex-col bg-slate-200 w-screen h-screen">
-      <Nav_Bar />
-      <main className="max-w-2xl" >
-        
-      </main>
-    </section>
+    <main class="min-h-screen bg-cyan-50 dark:bg-cyan-950 text-slate-900 dark:text-cyan-50 font-Roboto" >
+      <section className="max-w-4xl mx-auto" >
+        <Nav_Bar />
+        <Home />
+      </section>
+    </main>
   );
 }
 
