@@ -7,6 +7,7 @@ import Home from "./Home"
 export default function Nav_Bar(){
     return(
         <div>
+            
             <header className="sticky top-0 z-10 bg-slate-50 dark:bg-cyan-950 text-cyan-950 dark:text-cyan-50" >
                 <section className="max-w-4xl mx-auto p-4 flex justify-between items-center">
                     <h1 className="text-3xl font-bold font-Pacifico" >
