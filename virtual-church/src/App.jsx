@@ -5,6 +5,7 @@ import Buttons from './build_tools/Buttons';
 import InputBox from './build_tools/InputBox';
 import Nav_Bar from './nav-elements/Nav_bar';
 import Home from './nav-elements/Home';
+import Footer from './nav-elements/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <section className="max-w-4xl mx-auto" >
         <Home />
       </section>
+      <Footer />
     </main>
   );
 }

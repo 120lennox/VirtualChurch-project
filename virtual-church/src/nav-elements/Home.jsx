@@ -16,7 +16,7 @@ export default function Home(){
                         Faith Beyond Walls: Your Sanctuary Online
                     </p>
                     <div className="flex justify-center sm:justify-start">
-                        <button className="mt-4 bg-yellow-400 p-4 py-2 rounded-md text-cyan-50 font-semibold hover:bg-cyan-50 hover:text-cyan-950 duration-75 ease-in-out">Get started</button>
+                        <button className="mt-4 bg-yellow-400 p-4 py-2 rounded-md text-cyan-50 font-semibold hover:bg-cyan-50 hover:text-cyan-950 duration-200 ease-in-out">Get started</button>
                     </div>
                 </article>             
             </section>
