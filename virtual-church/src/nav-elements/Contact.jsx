@@ -2,7 +2,7 @@ import { FaFacebook, FaLinkedin, FaLinkedinIn  } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 export default function Contact(){
     return (
-       <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-6 gap-x-12">
+       <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-6 gap-x-12 mb-10">
             <div aria-label="contact-info" className="flex flex-col justify-between">
                 <div className="mt-8 justify-center items-center sm:justify-start sm:items-start">
                     <h1 className="text-center sm:text-left font-bold text-3xl sm:text-4xl space-y-2">Contact Us</h1>

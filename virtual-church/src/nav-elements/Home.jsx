@@ -1,10 +1,10 @@
 import Contact from "./Contact";
+import Footer from "./Footer";
 import Nav_Bar from "./Nav_bar";
 
 export default function Home(){
     return (
         <div>
-            <Nav_Bar/>
             <section className="flex flex-col-reverse justify-center sm:justify-between sm:flex-row p-4 items-center gap-12 mb-12 sm:mt-12">
                 <article class="sm:w-1/2">
                     <h1 className="text-4xl text-center sm:text-6xl sm:text-left">
@@ -12,7 +12,7 @@ export default function Home(){
                         Connect, Worship and Grow, Anywhere Anyime!
                         </span> 
                     </h1>
-                    <p className="text-center sm:text-left text-2xl " >
+                    <p className="mt-2 text-center sm:text-left text-2xl text-cyan-100" >
                         Faith Beyond Walls: Your Sanctuary Online
                     </p>
                     <div className="flex justify-center sm:justify-start">
@@ -65,6 +65,9 @@ export default function Home(){
             </section>
             <section aria-label="contact-us" className="">
                 <Contact />
+            </section>
+            <section aria-label="footer">
+                <Footer/>
             </section>
         </div>
     )
