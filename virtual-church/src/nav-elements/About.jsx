@@ -1,5 +1,9 @@
-export default function About(){
+import LinkTo from "../build_tools/LinkTo";
+
+export default function About() {
     return (
-        <h1>About us</h1>
-    )
+        <div>
+            <LinkTo name="Test Dashboard" to="/dashboard" />
+        </div>
+    );
 }

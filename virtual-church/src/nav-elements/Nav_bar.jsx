@@ -1,9 +1,4 @@
-import {Routes, Route, Link} from "react-router-dom"
-import Login from "./Login"
-import About from "./About"
-import Signup from "./Signup"
-import App from "../App"
-import Home from "./Home"
+import {Link} from "react-router-dom"
 export default function Nav_Bar(){
     return(
         <div>
@@ -22,12 +17,6 @@ export default function Nav_Bar(){
                     </nav>
                 </section>
             </header>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About/>} />
-                <Route path="/signup" element={<Signup/>} />
-                <Route path="/login" element={<Login/>} />
-            </Routes>
         </div>
     )
 }
