@@ -41,4 +41,4 @@
 Throughout the development process, it's essential to collaborate closely with the church stakeholders, regularly communicate progress, and prioritize tasks based on their feedback and requirements. Additionally, ensure that you follow best practices for security, scalability, and maintainability when developing the application.
 
 # COLLABORATORS
-Kennedy Soko bsc-inf-16-21
+Kennedy Soko
