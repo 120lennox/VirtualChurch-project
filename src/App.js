@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SignUpForm from './Singup-form';
-import './signup.css';
+
 
 const SignUpPage = () => {
   // Define state variables using useState
@@ -37,8 +37,8 @@ const SignUpPage = () => {
 
   return (
     <body>
-    <div className= "style">
-      <h1>Create Your Church Profile</h1>
+    <div className= "style w-auto text-4x1 h-screen text-center items-center justify-center bg-cyan-950  ">
+      <h1 className="text-4x10">Create Your Church Profile</h1>
       {message && <p>{message}</p>}
       <SignUpForm onSubmit={handleSignUp} />
       
