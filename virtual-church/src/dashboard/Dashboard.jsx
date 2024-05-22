@@ -1,7 +1,14 @@
+import {Link} from "react-router-dom"
+import Sidebar from "./Sidebar"
+import Registration from "./dashboard-pages/Registration"
+import Notification from "./dashboard-pages/Notification"
+import Community from "./dashboard-pages/Community"
+
 export default function Dashboard(){
+
     return(
-        <main aria-label="main-container" className="" >
-            <h1>Zatheka</h1>
-        </main>
+        <div>
+            <Community />
+        </div>
     )
 }
