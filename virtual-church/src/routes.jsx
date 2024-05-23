@@ -14,6 +14,7 @@ import Settings from "./dashboard/dashboard-pages/Settings";
 import Registration from "./dashboard/dashboard-pages/Registration";
 import Tithing from "./dashboard/dashboard-pages/Tithing";
 import Manage from "./dashboard/dashboard-pages/Manage";
+import CreateChurchProfile from "./pages/CreateProfile";
 
 
 const router = createBrowserRouter([
@@ -95,6 +96,12 @@ const router = createBrowserRouter([
         {
             path: "/manage",
             element: <Manage />
+        },
+
+        //other pages 
+        {
+            path: "/create-profile",
+            element: <CreateChurchProfile />
         }
     ])
 

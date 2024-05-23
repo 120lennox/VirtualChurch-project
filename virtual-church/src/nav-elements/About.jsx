@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div>
             <Link to="dashboard" className="font-poppins bg-cyan-900 rounded-md p-2">
-                test dashboard
+                testing dashboard
             </Link>
         </div>
     );
