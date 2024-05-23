@@ -4,6 +4,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
 import React, { useState, useRef } from 'react';
 
+// no errors so far
 export default function Signup({onSubmit}){
     /*Definition of state variables which will store user input
    using the useState hook*/
