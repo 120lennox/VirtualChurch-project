@@ -1,6 +1,5 @@
 import Contact from "./Contact";
 import Footer from "./Footer";
-import Nav_Bar from "./Nav_bar";
 import { Link } from "react-router-dom";
 
 export default function Home(){

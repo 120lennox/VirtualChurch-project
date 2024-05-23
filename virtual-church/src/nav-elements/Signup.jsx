@@ -1,11 +1,8 @@
-import { CgProfile } from "react-icons/cg";
-import { MdLock } from "react-icons/md";
-import { MdOutlineMailOutline } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
 import React, { useState, useRef } from 'react';
 import Nav_Bar from "./Nav_bar";
 import { Link } from "react-router-dom";
-import Login from "./Login";
+
 // no errors so far
 export default function Signup({onSubmit}){
     /*Definition of state variables which will store user input

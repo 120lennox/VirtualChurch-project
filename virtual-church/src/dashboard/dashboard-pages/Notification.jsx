@@ -1,4 +1,3 @@
-import Sidebar from "../Sidebar";
 import { IoIosNotifications } from "react-icons/io";
 
 export default function Notification(){
