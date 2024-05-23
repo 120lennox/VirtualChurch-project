@@ -53,17 +53,17 @@ export default function Contact(){
                     <form action="">
                      <div className="p-5 flex flex-col justify-center items-center relative">
                             <input type="text" id="username" className="bg-cyan-900 px-12 py-2 border-b focus:outline-none focus:border-yellow-500 peer transition-colors" />
-                            <label htmlFor="username" className="absolute left-7 text-cyan-200 text-sm peer-focus:text-xs peer-focus:top-3 duration-500 transition-all">Your name</label> 
+                            <label htmlFor="username" className="absolute left-7 text-cyan-200 text-sm peer-focus:text-xs peer-focus:top-3 duration-500 peer-focus:text-yellow-500 transition-all">Your name</label> 
                         </div>
 
                         <div className="p-5 flex flex-col justify-center items-center relative">
                             <input type="text" id="email" className="bg-cyan-900 px-12 py-2 border-b focus:outline-none focus:border-yellow-500 peer transition-colors" />
-                            <label htmlFor="email" className="absolute left-7 text-cyan-200 text-sm peer-focus:text-xs peer-focus:top-3 duration-500 transition-all">Email</label> 
+                            <label htmlFor="email" className="absolute left-7 text-cyan-200 text-sm peer-focus:text-xs peer-focus:top-3 peer-focus:text-yellow-500 duration-500 transition-all">Email</label> 
                         </div>
 
                         <div className="p-5 flex flex-col justify-center items-center relative">
-                            <input type="text" id="message" className="bg-cyan-900 px-12 py-2 border-b focus:outline-none focus:border-yellow-500 peer transition-colors" />
-                            <label htmlFor="message" className="absolute left-7 text-cyan-200 text-sm peer-focus:text-xs peer-focus:top-3 duration-500 transition-all">Your message here</label> 
+                            <input type="text" id="message" className="bg-cyan-900 px-12 py-2 border-b focus:outline-none focus:border-yellow-500 peer  transition-colors" />
+                            <label htmlFor="message" className="absolute left-7 text-cyan-200 text-sm peer-focus:text-xs peer-focus:top-3 peer-focus:text-yellow-500 duration-500 transition-all">Your message here</label> 
                         </div>
                         <div className="flex justify-center mt-6 bg-yellow-400 rounded-md shadow-md p-2 cursor-pointer hover:scale-75 duration-200">
                             <input type="submit" />
