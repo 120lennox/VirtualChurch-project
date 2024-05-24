@@ -31,21 +31,21 @@ export default function Contact(){
 
                 </div>
                 <div className="flex flex-row mt-4 p-2 gap-x-2 justify-center sm:justify-start items-center sm:items-center">
-                    <a href="">
+                    <Link>
                         <span>
                         <RiWhatsappFill className="w-6 h-6 text-cyan-100"/>
                         </span>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link>
                         <span>
                             <FaFacebook className="text-cyan-100" />
                         </span>
-                    </a>
-                    <a href="">
+                    </Link>
+                    <Link>
                         <span>
                          <FaLinkedinIn />
                         </span>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div aria-label="contact-form" className="flex justify-center sm:justify-end">
