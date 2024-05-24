@@ -10,7 +10,7 @@ export default function Accounts(){
                         <Sidebar />
                     </div>
                     <div aria-label="Accounts" className="bg-cyan-950 p-12 rounded-md">
-
+                        
                     </div>
                     <div  className="bg-cyan-900 p-12 rounded-xl">
                             <Notification />
