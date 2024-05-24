@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom"
-export default function Nav_Bar(){
+export default function Navbar(){
     return(
         <div>
             <header className="sticky top-0 z-10 bg-slate-50 dark:bg-cyan-950 text-cyan-950 dark:text-cyan-50" >

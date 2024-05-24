@@ -1,6 +1,6 @@
 import { FcGoogle } from "react-icons/fc";
 import React, { useState, useRef } from 'react';
-import Nav_Bar from "./Nav_bar";
+import NavBar from "./Nav_bar";
 import { Link } from "react-router-dom";
 
 // no errors so far
@@ -42,7 +42,7 @@ export default function Signup({onSubmit}){
     return (
         <main className="bg-cyan-100 dark:bg-cyan-950 min-h-screen font-poppins">
             <div>
-                <Nav_Bar />
+                <NavBar />
             </div>
             <section className="max-w-4xl mx-auto mt-8">
                 <div className="flex justify-center items-center">
