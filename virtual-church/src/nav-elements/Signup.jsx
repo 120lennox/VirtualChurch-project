@@ -12,24 +12,7 @@ export default function Signup({onSubmit}){
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
 
-//Function to handle user input change.
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    switch (name) {
-      case 'fullName':
-        setFullName(value);
-        break;
-      case 'email': 
-        setEmail(value);
-        break;
-      case 'password':
-        setPassword(value);
-        break;
-        
-      default:
-        break;
-    }
-  };
+
   // Creation of  a reference to the password input field
   const passwordRef = useRef();
 
@@ -101,7 +84,7 @@ export default function Signup({onSubmit}){
                         </div>
                             </div>
                             <div className="mt-10">
-                                <p className="text-cyan-200">By continuing you agree to our <a className="font-bold text-yellow-400 hover:underline"  href='#'>Terms of service</a> and <a className="font-bold text-yellow-400 hover:underline" href="#"> Privacy policy</a></p>
+                                <p className="text-cyan-200">By continuing you agree to our <Link className="font-bold text-yellow-400 hover:underline">Terms of service</Link> and <Link className="font-bold text-yellow-400 hover:underline"> Privacy policy</Link></p>
                             </div>
                             <div>
                                 <button className="flex flex-row items-center bg-cyan-600 rounded-md mt-10  py-2 px-10 mb-5 hover:scale-90 duration-200 ease-in-out" type="submit" ><p className="font-semibold text-cyan-50" onClick={handleSubmit}>Create Profile</p></button>
@@ -111,7 +94,7 @@ export default function Signup({onSubmit}){
                             <p className="text-gcyan-200 mb-5">or</p>
                             </div>
                             <div>
-                            <button className=" flex flex-row items-center border-yellow-400 border-2 bg-transparent outline-4 rounded-md py-2 px-10  hover:scale-90 duration-200 ease-in-out"><p className="text-cyan-100 font-semibold ">Continue with <FcGoogle className="inline-block" /></p></button>
+                            <button className=" flex flex-row items-center border-yellow-400 border-2 bg-transparent outline-4 rounded-md py-2 px-10  hover:scale-90 duration-200 ease-in-out"><Link className="text-cyan-100 font-semibold ">Continue with <FcGoogle className="inline-block" /></Link></button>
                             </div>
                             <div className="flex flex-row mt-5 space-x-2">
                                 <p className="text-cyan-200">Already have an account?</p>

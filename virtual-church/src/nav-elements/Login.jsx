@@ -1,7 +1,6 @@
 import { FcGoogle } from "react-icons/fc"
 import { FaKey } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
-import { Link } from "react-router-dom";
 
 export default function Login(){
     return (
