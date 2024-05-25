@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build" # Assumes you have a 'build' script in package.json
+  publish = "build" # The directory where the production build is generated
+
+[[redirects]]
+  from = "/*" # All routes except root
+  to = "/index.html" # React app entry point
+  status = 200 # Optional, defaults to 200
