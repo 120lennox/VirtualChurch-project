@@ -1,13 +1,5 @@
-import React, { useState } from 'react';
 import Sidebar from "../Sidebar"
 import Notification from "./Notification"
-import { FaRegTrashCan } from "react-icons/fa6";
-
-const MemberRegistration = () => {
-    const [accountDeleted, setAccountDeleted] = useState(false);
-    const handleDeleteAccount = () => {
-        setAccountDeleted(true); };
-
 
 export default function Accounts(){
     return (
@@ -17,14 +9,13 @@ export default function Accounts(){
                     <div className="bg-cyan-900 p-14 shadow-lg rounded-3xl">
                         <Sidebar />
                     </div>
-                    <div aria-label="Accounts" className="bg-cyan-950 p-12 rounded-md">
-                    <div className="flex justify-center items-center h-screen bg-cyan-950">
-                      <div className=" bg-cyan-100 p-10 rounded shadow-md">
+                    <div aria-label="Accounts" className="bg-cyan-950 p-5 rounded-md">
+                    <div aria-label="width-definition" className="flex space-y-5 justify-center items-center flex-col z-50">
+                    <div aria-label="header" className="bg-cyan-900 py-4 px-7 rounded-lg flex flex-col">
                         <button className="w-full bg-blue-950 text-white py-2 px-4 rounded hover:bg-blue-700 mb-4">
                              Logout
                       </button>
                          <button className="w-full bg-red-600 text-white py-2 px-4 rounded hover:bg-red-600">
-                         <FaRegTrashCan />
                             Delete Account
                           </button>
                          </div>
