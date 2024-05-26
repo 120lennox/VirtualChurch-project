@@ -3,7 +3,7 @@ import React, { useState} from 'react';
 import NavBar from "./Nav_bar";
 import { Link, useNavigate } from "react-router-dom";
 
-export default function Signup(){
+export default function Signup({onSubmit}){
     /*Definition of state variables which will store user input
    using the useState hook*/
   const [fullName, setFullName] = useState('');
