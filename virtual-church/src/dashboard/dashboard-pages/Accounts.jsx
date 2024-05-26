@@ -5,8 +5,11 @@ import { FaRegTrashCan } from "react-icons/fa6";
 
 const Accounts = () => {
     const [accountDeleted, setAccountDeleted] = useState(false);
+    const [sectionResized, setSectionResized] = useState(false);
+
     const handleDeleteAccount = () => {
         setAccountDeleted(true);
+        setSectionResized(true); // Resize the section when account is deleted
     };
 
     return (
@@ -18,17 +21,15 @@ const Accounts = () => {
                     </div>
                     <div aria-label="Accounts" className="bg-cyan-950 p-5 rounded-md">
                         <div aria-label="width-definition" className="flex space-y-5 justify-center items-center flex-col z-50">
-                            <div aria-label="header" className="bg-cyan-900 py-4 px-7 rounded-lg flex flex-col">
-                                <div className="flex flex-row justify-between items-center space-x-10">
-                                    <button className="w-full bg-blue-950 text-white py-2 px-4 rounded hover:bg-blue-700 mb-4">
-                                        Logout
-                                    </button>
-                                    <button className="w-full bg-red-600 text-white py-2 px-4 rounded hover:bg-red-600 mb-4 flex items-center justify-center"
-                                        onClick={handleDeleteAccount}>
-                                        <FaRegTrashCan className="mr-2" />
-                                        Delete Account
-                                    </button>
-                                </div>
+                            <div aria-label="header" className={`bg-cyan-900 py-4 px-7 rounded-lg flex flex-col ${sectionResized ? 'py-2 px-3' : ''}`}>
+                                <button className="w-full bg-blue-950 text-white py-2 px-4 rounded hover:bg-blue-700 mb-4">
+                                    Logout
+                                </button>
+                                <button className="w-full bg-red-600 text-white py-2 px-4 rounded hover:bg-red-600 mb-4 flex items-center justify-center"
+                                    onClick={handleDeleteAccount}>
+                                    <FaRegTrashCan className="mr-2" />
+                                    Delete Account
+                                </button>
                                 {accountDeleted && (
                                     <p>Your account has been deleted successfully!</p>
                                 )}
