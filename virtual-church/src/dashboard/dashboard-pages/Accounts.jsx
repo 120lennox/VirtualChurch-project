@@ -3,6 +3,11 @@ import Sidebar from "../Sidebar"
 import Notification from "./Notification"
 import { FaRegTrashCan } from "react-icons/fa6";
 
+const MemberRegistration = () => {
+    const [accountDeleted, setAccountDeleted] = useState(false);
+    const handleDeleteAccount = () => {
+        setAccountDeleted(true); };
+
 
 export default function Accounts(){
     return (
