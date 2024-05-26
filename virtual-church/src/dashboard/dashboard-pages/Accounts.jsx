@@ -1,5 +1,13 @@
+import React, { useState } from 'react';
 import Sidebar from "../Sidebar"
 import Notification from "./Notification"
+import { FaRegTrashCan } from "react-icons/fa6";
+
+const MemberRegistration = () => {
+    const [accountDeleted, setAccountDeleted] = useState(false);
+    const handleDeleteAccount = () => {
+        setAccountDeleted(true); };
+
 
 export default function Accounts(){
     return (
@@ -16,6 +24,7 @@ export default function Accounts(){
                              Logout
                       </button>
                          <button className="w-full bg-red-600 text-white py-2 px-4 rounded hover:bg-red-600">
+                         <FaRegTrashCan />
                             Delete Account
                           </button>
                          </div>
