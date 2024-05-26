@@ -3,7 +3,7 @@ import Sidebar from "../Sidebar";
 import Notification from "./Notification";
 import { FaRegTrashCan } from "react-icons/fa6";
 
-const Accounts = () => {
+export default function Accounts(){
     const [accountDeleted, setAccountDeleted] = useState(false);
     const [sectionResized, setSectionResized] = useState(false);
 
@@ -45,4 +45,3 @@ const Accounts = () => {
     );
 };
 
-export default Accounts;
