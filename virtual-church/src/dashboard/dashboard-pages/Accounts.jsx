@@ -9,7 +9,7 @@ export default function Accounts(){
 
     const handleDeleteAccount = () => {
         setAccountDeleted(true);
-        setSectionResized(true); // Resize the section when account is deleted
+        setSectionResized(true); 
     };
 
     return (
