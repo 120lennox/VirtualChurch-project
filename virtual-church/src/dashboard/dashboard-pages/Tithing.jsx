@@ -1,21 +1,49 @@
 import Sidebar from "../Sidebar"
-import Notification from "./Notification"
 export default function Tithing(){
     return (
-        <main aria-label="main-container" className="flex text-cyan-950 dark:text-cyan-50 font-poppins" >
-            <section aria-label="submain-container" className="min-h-screen w-full bg-cyan-100 dark:bg-cyan-950">
-                <div aria-label="width-definition" className="max-w-7xl mx-auto mt-10 flex flex-row justify-between">
-                    <div className="bg-cyan-900 p-14 shadow-lg rounded-3xl">
+        <main className="bg-cyan-950 w-screen h-screen " >
+                    <div className=" flex flex-row space-x-8 justify-center items-center">
+                    <div className="bg-cyan-900 w-60 sm:w-80 h-5/6 shadow-lg mt-10 mb-20 py-20 rounded-3xl ">
                         <Sidebar />
                     </div>
-                    <div aria-label="Tithing" className="bg-cyan-950 p-12 rounded-md">
-
+                   
+                    <div className="flex flex-col mt-12 space-y-10  ">
+                      <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  ">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                      <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  " >
+                        <div></div>
+                        <div></div>
+                      </div>
                     </div>
-                    <div  className="bg-cyan-900 p-12 rounded-xl">
-                            <Notification />
+                    <div className="flex flex-col mt-12 space-y-10  ">
+                      <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  ">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                      </div>
+                      <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  " >
+                      <div></div>
+                      <div></div>
+                      </div>
                     </div>
-                </div>
-            </section>
+                    <div className="flex flex-col mt-12 space-y-10  ">
+                      <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  ">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      </div>
+                      <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  " >
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      </div>
+                    </div>
+                    </div>
+                    
+              
         </main>
     )
 }
