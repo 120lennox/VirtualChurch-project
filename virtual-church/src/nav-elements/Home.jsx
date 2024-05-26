@@ -9,7 +9,7 @@ export default function Home(){
                 <article class="sm:w-1/2">
                     <h1 className="text-4xl text-center sm:text-6xl sm:text-left">
                         <span className="text-yellow-300">
-                        Connect, Worship and Grow, Anywhere Anyime!
+                        Connect, Worship and Grow, Anywhere Anytime!
                         </span> 
                     </h1>
                     <p className="mt-2 text-center sm:text-left text-2xl text-cyan-100" >

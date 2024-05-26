@@ -51,7 +51,7 @@ export default function Contact(){
                 </div>
             </div>
             <div aria-label="contact-form" className="flex justify-center sm:justify-end">
-                <div className="bg-cyan-900 rounded-md shadow-md p-5">
+                <div className="bg-cyan-900 rounded-md shadow-md p-2 sm:p-5">
                     <form action="">
                      <div className="p-5 flex flex-col justify-center items-center relative">
                             <input type="text" id="username" className="bg-cyan-900 px-12 py-2 border-b focus:outline-none focus:border-yellow-500 peer transition-colors" />

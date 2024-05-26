@@ -63,7 +63,7 @@ export default function Signup({onSubmit}){
                             <label className="text-lg text-cyan-100">Name </label>
                             <input className="text-center rounded-md py-2 px-6 text-cyan-950" type="text" id="First Name" placeholder="e.g Lenoil Amulus" onChange={(e) => setFullName(e.target.value)} value={fullName} />
 
-                            <div className="text-red-500">
+                            <div className="text-red-500 flex flex-col">
                                 {errors.fullName && <p className="" >{errors.fullName}</p>}                   
                             </div>
                         </div>
