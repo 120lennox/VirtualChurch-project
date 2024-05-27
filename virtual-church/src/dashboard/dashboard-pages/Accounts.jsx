@@ -8,7 +8,7 @@ const MemberRegistration = () => {
     const handleDeleteAccount = () => {
         setAccountDeleted(true); };
 
-
+    }
 export default function Accounts(){
     return (
         <main aria-label="main-container" className="flex text-cyan-950 dark:text-cyan-50 font-poppins" >

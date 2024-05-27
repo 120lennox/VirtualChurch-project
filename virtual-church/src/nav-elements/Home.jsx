@@ -20,11 +20,11 @@ export default function Home(){
                     </div>
                 </article>             
             </section>
-            <hr className="mx-auto bg-cyan-950 dark:bg-cyan-50" />
+            <hr className="mx-auto bg-cyan-50" />
             <section aria-label="featured_sermons" className="p-6">
                 <h2 className="text-3xl sm:text-4xl font-bold text-center font-poppins" >Featured Sermons</h2>
                 <div className="flex justify-between items-center sm:items-start flex-col sm:flex-row duration-75" >
-                    <div className="min-w-sm mt-8 bg-cyan-100 dark:bg-cyan-900 rounded-md shadow-md p-4 hover:scale-110 duration-300 ease-in-out">
+                    <div className="min-w-sm mt-8 bg-cyan-900 rounded-md shadow-md p-4 hover:scale-110 duration-300 ease-in-out">
                         <h2>picture here</h2>
                         <p>test paragraph</p>
                         <div className="mt-5">
@@ -33,7 +33,7 @@ export default function Home(){
                         </div>  
                     </div>
 
-                    <div className="min-w-sm mt-8 bg-cyan-100 dark:bg-cyan-900 rounded-md shadow-md p-4 hover:scale-110 duration-300 ease-in-out">
+                    <div className="min-w-sm mt-8 bg-cyan-900 rounded-md shadow-md p-4 hover:scale-110 duration-300 ease-in-out">
                         <h2>picture here</h2>
                         <p>test paragraph</p>
                         <div className="mt-5">
@@ -42,7 +42,7 @@ export default function Home(){
                         </div>  
                     </div>
 
-                    <div className="min-w-sm mt-8 bg-cyan-100 dark:bg-cyan-900 rounded-md shadow-md p-4 hover:scale-110 duration-300 ease-in-out">
+                    <div className="min-w-sm mt-8 bg-cyan-900 rounded-md shadow-md p-4 hover:scale-110 duration-300 ease-in-out">
                         <h2>picture here</h2>
                         <p>test paragraph</p>
                         <div className="mt-5">
@@ -51,7 +51,7 @@ export default function Home(){
                         </div>  
                     </div>
 
-                    <div className="min-w-sm mt-8 bg-cyan-100 dark:bg-cyan-900 rounded-md shadow-md p-4 hover:scale-110 duration-300 ease-in-out">
+                    <div className="min-w-sm mt-8 bg-cyan-900 rounded-md shadow-md p-4 hover:scale-110 duration-300 ease-in-out">
                         <h2>picture here</h2>
                         <p>test paragraph</p>
                         <div className="mt-5">

@@ -8,7 +8,7 @@ import Home from "./Home"
  */
 export default function Homepage(){
     return (
-    <main className="min-h-screen bg-cyan-50 dark:bg-cyan-950 text-slate-900 dark:text-cyan-50 font-poppins scroll-smoth scrollbar scrollbar-track-yellow-300" >
+    <main className="min-h-screen bg-cyan-950 text-cyan-50 font-poppins scroll-smoth scrollbar scrollbar-track-yellow-300" >
       <section className="max-w-4xl mx-auto">
         <NavBar />
         <Home />
