@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-const VirtualChurchProfile = () => {
+const SetProfile = () => {
   const [churchName, setChurchName] = useState('');
   const [location, setLocation] = useState('');
   const [meetingDay, setMeetingDay] = useState('Sunday');
@@ -107,4 +107,4 @@ const VirtualChurchProfile = () => {
   );
 };
 
-export default VirtualChurchProfile;
+export default SetProfile;
