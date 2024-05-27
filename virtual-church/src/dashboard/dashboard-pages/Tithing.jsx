@@ -1,4 +1,5 @@
 import Sidebar from "../Sidebar"
+import { LiaBalanceScaleSolid } from "react-icons/lia";
 export default function Tithing(){
     return (
         <main className="bg-cyan-950 w-screen h-screen " >
@@ -9,7 +10,10 @@ export default function Tithing(){
                    
                     <div className="flex flex-col mt-12 space-y-10  ">
                       <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  ">
-                        <div></div>
+                        <div className="mt-2 w-3/6 h-1/6 bg-cyan-500 rounded-md mx-2 inline-block">
+                        <LiaBalanceScaleSolid />
+                        <p className="font-semibold text-gray-200 mx-1">Balance</p>
+                        </div>
                         <div></div>
                         <div></div>
                       </div>
