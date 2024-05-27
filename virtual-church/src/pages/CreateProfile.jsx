@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CreateChurchProfile = () => {
   return (
@@ -10,9 +11,11 @@ const CreateChurchProfile = () => {
              Welcome <br />  Worshiping<br /> Growing together
         </p>
         <div className='pl-[10%]'>
-        <button className="flex flex-row items-center m-6 bg-yellow-400 text-white py-2 px-20 rounded-md hover:bg-yellow-700">
-          Create
-        </button>
+        <Link to="/set-profile">
+          <button className="flex flex-row items-center m-6 bg-yellow-400 text-white py-2 px-20 rounded-md hover:bg-yellow-700">
+            Create
+          </button>
+        </Link>
         </div>
          <div className="mt-8 border-t border-gray-300 pt-6">
           <p className="flex justify-center items-center text-cyan-100">or
@@ -30,9 +33,11 @@ const CreateChurchProfile = () => {
             />
             </div>
             <div className='pl-[10%]'>
-            <button className="bg-yellow-400 items-center p-10 m-10 text-white py-2 px-20 rounded-md hover:bg-yellow-700 transition-colors duration-300">
-              Join
-            </button>
+              <Link to="/dashboard">
+                <button className="bg-yellow-400 items-center p-10 m-10 text-white py-2 px-20 rounded-md hover:bg-yellow-700 transition-colors duration-300">
+                  Join
+                </button>
+              </Link>
             </div>
 
           

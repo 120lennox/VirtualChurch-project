@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import React, { useState } from 'react';
 const SetProfile = () => {
   const [churchName, setChurchName] = useState('');
@@ -22,32 +24,32 @@ const SetProfile = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-cyan-950">
-      <div className="bg-cyan-700 p-8 rounded shadow-md w-full max-w-md">
+    <div className="flex items-center justify-center bg-cyan-950 text-cyan-100">
+      <div className="bg-cyan-900 p-12 rounded-xl">
         <h1 className="text-2xl font-bold mb-6">Create Virtualchurch Profile</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className=" scroll-m-6 block text-cyan-900">Your Church Name</label>
+            <label className=" scroll-m-6 block text-cyan-100">Your Church Name</label>
             <input
               type="text"
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded-md"
               value={churchName}
               onChange={(e) => setChurchName(e.target.value)}
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Location</label>
+            <label className="block text-cyan-100">Location</label>
             <input
               type="text"
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded-md"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Meeting Days</label>
+            <label className="block text-cyan-100">Meeting Days</label>
             <select
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded-md text-cyan-900"
               value={meetingDay}
               onChange={(e) => setMeetingDay(e.target.value)}
             >
@@ -61,9 +63,9 @@ const SetProfile = () => {
             </select>
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Denomination</label>
+            <label className="block text-cyan-100">Denomination</label>
             <select
-              className=" scroll-m-6 w-full px-3 py-2 border rounded"
+              className=" scroll-m-6 w-full px-3 py-2 border rounded-md text-cyan-900"
               value={denomination}
               onChange={(e) => setDenomination(e.target.value)}
             >
@@ -76,7 +78,7 @@ const SetProfile = () => {
             </select>
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">From</label>
+            <label className="block text-cyan-100">From</label>
             <input
               type="time"
               className="w-full px-3 py-2 border rounded"
@@ -85,7 +87,7 @@ const SetProfile = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">To</label>
+            <label className="block text-cyan-100">To</label>
             <input
               type="time"
               className=" flex justify-end w-[100%] px-3 py-2 border rounded"
@@ -93,14 +95,11 @@ const SetProfile = () => {
               onChange={(e) => setToTime(e.target.value)}
             />
           </div>
-          <button
-            type="submit"
-            className="flex-col items-center justify-center">
-            <button className = "bg-cyan-950 text-white px-10 py-3"
-          >
-            Create
+          <Link to="/dashboard">
+            <button className="bg-yellow-400 p-4 rounded-md hover:scale-95 duration-200 ease-in-out">
+              Submit
             </button>
-          </button>
+          </Link>
         </form>
       </div>
     </div>

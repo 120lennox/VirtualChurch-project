@@ -1,7 +1,8 @@
 import { FcGoogle } from "react-icons/fc";
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import NavBar from "./Nav_bar";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Signup(){
     /*Definition of state variables which will store user input
@@ -79,7 +80,7 @@ export default function Signup(){
                         <div className="space-x-4 mt-10 flex flex-row">
     
                             <label className="">Password</label>
-                            <input className="text-cyan-950 rounded-md py-2 px-6" type="password" id="Password" onChange={(e) => setPassword(e.target.value)} ref={passwordRef} value={password} htmlFor="Passord" />
+                            <input className="text-cyan-950 rounded-md py-2 px-6" type="password" id="Password" onChange={(e) => setPassword(e.target.value)} value={password} htmlFor="Password" />
 
                             <div className="mt-1 justify-center flex items-center mb-1">
                             {errors.password && <p class=" text-red-600 ">{errors.password}</p>}
