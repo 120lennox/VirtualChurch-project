@@ -1,5 +1,7 @@
+import React from 'react';
 import Sidebar from "../Sidebar"
 import Notification from "./Notification"
+import { FaRegTrashCan } from "react-icons/fa6";
 
 export default function Accounts(){
     return (
@@ -10,7 +12,17 @@ export default function Accounts(){
                         <Sidebar />
                     </div>
                     <div aria-label="Accounts" className="bg-cyan-950 p-12 rounded-md">
-
+                    <div className="flex justify-center items-center h-screen bg-cyan-950">
+                      <div className=" bg-cyan-100 p-10 rounded shadow-md">
+                        <button className="w-full bg-blue-950 text-white py-2 px-4 rounded hover:bg-blue-700 mb-4">
+                             Logout
+                      </button>
+                         <button className="w-full bg-red-600 text-white py-2 px-4 rounded hover:bg-red-600">
+                         <FaRegTrashCan />
+                            Delete Account
+                          </button>
+                         </div>
+                       </div>
                     </div>
                     <div  className="bg-cyan-900 p-12 rounded-xl">
                             <Notification />

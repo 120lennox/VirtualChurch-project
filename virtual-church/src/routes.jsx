@@ -15,6 +15,8 @@ import Registration from "./dashboard/dashboard-pages/Registration";
 import Tithing from "./dashboard/dashboard-pages/Tithing";
 import Manage from "./dashboard/dashboard-pages/Manage";
 import CreateChurchProfile from "./pages/CreateProfile";
+import Signup from "./nav-elements/Signup";
+import SetProfile from "./nav-elements/SetProfile";
 
 
 const router = createBrowserRouter([
@@ -47,6 +49,11 @@ const router = createBrowserRouter([
         {
             path: "/login",
             element: <Login/>
+        },
+
+        {
+            path: "/signup",
+            element: <Signup />
         },
         
         {
@@ -102,6 +109,11 @@ const router = createBrowserRouter([
         {
             path: "/create-profile",
             element: <CreateChurchProfile />
+        },
+        
+        {
+            path: "/set-profile",
+            element: <SetProfile />
         }
     ])
 

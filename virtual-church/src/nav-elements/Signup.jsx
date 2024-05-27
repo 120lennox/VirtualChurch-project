@@ -1,7 +1,7 @@
 import { FcGoogle } from "react-icons/fc";
-import React, { useState} from 'react';
+import React, { useState, useRef } from 'react';
 import NavBar from "./Nav_bar";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Signup(){
     /*Definition of state variables which will store user input
@@ -41,71 +41,70 @@ export default function Signup(){
     // Redirect to login page after successful signup
     navigate("/login");
   };
-
-  return (
-    <main className="bg-cyan-100 dark:bg-cyan-950 min-h-screen font-poppins">
-        <div>
-            <NavBar />
-        </div>
-        <section className="max-w-4xl mx-auto mt-8">
-            <div className="flex justify-center items-center">
-                <div className="bg-cyan-900 rounded-lg text-cyan-50 flex flex-col justify-center items-center p-12">
-
-                    <div className="mb-5">
-                        <p className="text-3xl font-semibold">Connect to VCMS</p>
-                    </div>
-
-                    <div className="mt-4">
-                        <p className="text-lg">Create Your Profile</p>
-                    </div>
-
-                    <div className="mt-4">
-                        <p className="text-yellow-400 text-sm sm:text-4x1 ">By creating your profile, you unlock the full potential of our platform. </p>
-                    </div>
-                    <div className=" space-x-6 sm:space-x-7 mt-8">
-                        <label className="text-lg text-cyan-100">Name </label>
-                        <input className=" rounded-md py-1 sm:py-2 px-1 w-40 sm:w-60 text-cyan-950 outline-none focus:ring-2 focus:ring-yellow-400 bg-slate-200" type="text" id="First Name" placeholder="e.g Lenoil Amulus" onChange={(e) => setFullName(e.target.value)} value={fullName} />
-
-                        <div className="text-red-500">
-                            {errors.fullName && <p className="mt-1 text-x1 justify-center flex items-center mb-1" >{errors.fullName}</p>}                   
-                        </div>
-                    </div>
-                    <div className="mt-10 space-x-10 sm:space-x-10">
-                        <label className="text-lg text-cyan-100">Email</label>
-                        <input className=" rounded-md py-1 sm:py-2 px-1 w-40 sm:w-60 text-cyan-950 outline-none focus:ring-2 focus:ring-yellow-400 bg-slate-200" type="text" id="Email" placeholder="LenoilAmulus@gmail.com" onChange={(e) => setEmail(e.target.value)} value={email}></input>
-                        <div className="mt-1 justify-center flex items-center mb-1 ">                   
-                        {errors.email && <p class=" text-red-500 duration-200 ease-in-out">{errors.email}</p>}
-                        </div>
-                    </div>  
-                    <div className=" space-x-1 sm:space-x-1 mt-10">
-
-                        <label className="text-lg text-cyan-100">Password</label>
-                        <input className="text-cyan-950 rounded-md py-1 sm:py-2 px-1 w-40 sm:w-60  outline-none focus:ring-2 focus:ring-yellow-400 bg-slate-200" type="password" id="Password" onChange={(e) => setPassword(e.target.value)} value={password} htmlFor="Passord" />
-
-                        <div className="mt-1 justify-center flex items-center mb-1">
-                        {errors.password && <p class=" text-red-500 ">{errors.password}</p>}
-                    </div>
-                        </div>
-                        <div className="mt-10">
-                            <p className="text-cyan-200">By continuing you agree to our <Link className="font-bold text-yellow-400 hover:underline">Terms of service</Link> and <Link className="font-bold text-yellow-400 hover:underline"> Privacy policy</Link></p>
-                        </div>
-                        <div>
-                            <button className="flex flex-row items-center bg-cyan-600 rounded-md mt-10  py-2 px-10 mb-5 hover:scale-90 duration-200 ease-in-out" type="submit" ><Link to="/login" className="font-semibold text-cyan-50" onClick={handleSubmit}>Create Profile</Link></button>
-                            
-                        </div>
-                        <div>
-                        <p className="text-gcyan-200 mb-5">or</p>
-                        </div>
-                        <div>
-                        <button className=" flex flex-row items-center border-yellow-400 border-2 bg-transparent outline-4 rounded-md py-2 px-10  hover:scale-90 duration-200 ease-in-out"><Link className="text-cyan-100 font-semibold ">Continue with <FcGoogle className="inline-block" /></Link></button>
-                        </div>
-                        <div className="flex flex-row mt-5 space-x-2">
-                            <p className="text-cyan-200">Already have an account?</p>
-                            <Link className="text-yellow-400 font-semibold hover:underline" to="/login">Login</Link>
-                        </div>          
-                </div>
+    return (
+        <main className="bg-cyan-100 dark:bg-cyan-950 min-h-screen font-poppins">
+            <div>
+                <NavBar />
             </div>
-        </section>
-    </main>  
-)
+            <section className="max-w-4xl mx-auto mt-8">
+                <div className="flex justify-center items-center">
+                    <div className="bg-cyan-900 rounded-lg text-cyan-50 flex flex-col justify-center items-center p-12">
+
+                        <div className="mb-5">
+                            <p className="text-3xl font-semibold">Connect to VCMS</p>
+                        </div>
+
+                        <div className="mt-4">
+                            <p className="text-lg">Create Your Profile</p>
+                        </div>
+
+                        <div className="mt-4">
+                            <p className="text-yellow-400 text-sm sm:text-4x1 ">By creating your profile, you unlock the full potential of our platform. </p>
+                        </div>
+                        <div className="space-x-4 mt-8 flex flex-row items-center">
+                            <label className="text-lg text-cyan-100">Name </label>
+                            <input className="text-center rounded-md py-2 px-6 text-cyan-950" type="text" id="First Name" placeholder="e.g Lenoil Amulus" onChange={(e) => setFullName(e.target.value)} value={fullName} />
+
+                            <div className="text-red-500 flex flex-col">
+                                {errors.fullName && <p className="" >{errors.fullName}</p>}                   
+                            </div>
+                        </div>
+                        <div className="mt-8 flex flex-row items-center space-x-4">
+                            <label className="">Email</label>
+                            <input className="text-center rounded-md py-2 px-6 text-cyan-950" type="text" id="Email" placeholder="LenoilAmulus@gmail.com" onChange={(e) => setEmail(e.target.value)} value={email}></input>
+                            <div className="mt-1 justify-center flex items-center mb-1 ">                   
+                            {errors.email && <p class=" text-red-600 duration-200 ease-in-out">{errors.email}</p>}
+                            </div>
+                        </div> 
+                        <div className="space-x-4 mt-10 flex flex-row">
+    
+                            <label className="">Password</label>
+                            <input className="text-cyan-950 rounded-md py-2 px-6" type="password" id="Password" onChange={(e) => setPassword(e.target.value)} ref={passwordRef} value={password} htmlFor="Passord" />
+
+                            <div className="mt-1 justify-center flex items-center mb-1">
+                            {errors.password && <p class=" text-red-600 ">{errors.password}</p>}
+                        </div>
+                            </div>
+                            <div className="mt-10">
+                                <p className="text-cyan-200">By continuing you agree to our <Link className="font-bold text-yellow-400 hover:underline">Terms of service</Link> and <Link className="font-bold text-yellow-400 hover:underline"> Privacy policy</Link></p>
+                            </div>
+                            <div>
+                                <button className="flex flex-row items-center bg-cyan-600 rounded-md mt-10  py-2 px-10 mb-5 hover:scale-90 duration-200 ease-in-out" type="submit" ><p className="font-semibold text-cyan-50" onClick={handleSubmit}>Create Profile</p></button>
+                                
+                            </div>
+                            <div>
+                            <p className="text-gcyan-200 mb-5">or</p>
+                            </div>
+                            <div>
+                            <button className=" flex flex-row items-center border-yellow-400 border-2 bg-transparent outline-4 rounded-md py-2 px-10  hover:scale-90 duration-200 ease-in-out"><Link className="text-cyan-100 font-semibold ">Continue with <FcGoogle className="inline-block" /></Link></button>
+                            </div>
+                            <div className="flex flex-row mt-5 space-x-2">
+                                <p className="text-cyan-200">Already have an account?</p>
+                                <Link className="text-yellow-400 font-semibold hover:underline" to="/login">Login</Link>
+                            </div>          
+                    </div>
+                </div>
+            </section>
+        </main>  
+    )
 }

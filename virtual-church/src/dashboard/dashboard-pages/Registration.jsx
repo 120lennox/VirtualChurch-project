@@ -1,4 +1,3 @@
-import { FaLocationDot } from "react-icons/fa6";
 import Sidebar from "../Sidebar";
 import Notification from "./Notification";
 

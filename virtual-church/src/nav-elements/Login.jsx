@@ -8,6 +8,7 @@ export default function Login(){
                 <div className="flex flex-col justify-center items-center">
                     <div className="mb-5">
                         <h1 className="font-bold text-3xl sm:text-4xl text-gray-300 ">Signin</h1>
+                        <h1 className="font-bold text-3xl sm:text-4xl text-gray-300 ">Signin</h1>
                     </div>
                     <div className=" space-x-2 sm:space-x-4 mt-8">
                     
@@ -21,6 +22,7 @@ export default function Login(){
                         <input className="py-1 px-1 w-36 sm:w-60  rounded-md outline-none  focus:ring-2 focus:ring-yellow-400 bg-slate-200" type="password" id="password" />
                     </div>
                     <div className="mt-8 flex flex-row space-x-1 text-cyan-100">                     
+                    <div className="mt-8 flex flex-row space-x-1 text-cyan-100">                     
                         <input className="rounded-md" type="checkbox" id="remember-me" />
                         <label htmlFor="remember-me">remember me </label>
                     </div>
@@ -29,6 +31,8 @@ export default function Login(){
                         
                     </div>
                     
+                    <div className="mt-5 mb-5 ">
+                        <p className="text-gray-300 font-semibold">or</p>
                     <div className="mt-5 mb-5 ">
                         <p className="text-gray-300 font-semibold">or</p>
                     </div>
@@ -40,6 +44,9 @@ export default function Login(){
                     </div>
                 </div>
             </div>
+            </div>
         </div>
+        </div>
+
     )
 }
