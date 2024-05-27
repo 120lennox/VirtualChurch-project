@@ -3,8 +3,7 @@ import React, { useState, useRef } from 'react';
 import NavBar from "./Nav_bar";
 import { Link } from "react-router-dom";
 
-// no errors so far
-export default function Signup({onSubmit}){
+export default function Signup(){
     /*Definition of state variables which will store user input
    using the useState hook*/
   const [fullName, setFullName] = useState('');
@@ -14,7 +13,7 @@ export default function Signup({onSubmit}){
 
 
   // Creation of  a reference to the password input field
-  const passwordRef = useRef();
+  const navigate = useNavigate();
 
   // Function to handle form submission
   const handleSubmit = (e) => {
@@ -24,20 +23,23 @@ export default function Signup({onSubmit}){
     const newErrors = {};
     const fullNameRegex = /^[A-Z][a-z]+\s[A-Z][a-z]+$/;
     if (!fullName) newErrors.fullName = 'Full name is required.';
-    else if (!fullNameRegex.test(fullName))newErrors.fullName ='First and second name should start with a capital letter';
+    else if (!fullNameRegex.test(fullName))newErrors.fullName ='Incorrect format';
     if (!email) newErrors.email = 'Email is required.';
     else if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) newErrors.email = 'Invalid email format.';
     if (!password) newErrors.password = 'Password is required.';
     else if(password.length < 8) newErrors.password = 'password must be atleast 8 characters long';
     
   
-    // If there are errors, update the state with the new errors
     if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors)
-    }else{
-      // if there are no errors, cll the parent component function.
-      onSubmit({ fullName, email, password });
+      setErrors(newErrors);
+      return; // Exit function if there are errors
     }
+
+   
+    console.log("Signup successful:", { fullName, email, password });
+
+    // Redirect to login page after successful signup
+    navigate("/login");
   };
     return (
         <main className="bg-cyan-100 dark:bg-cyan-950 min-h-screen font-poppins">
