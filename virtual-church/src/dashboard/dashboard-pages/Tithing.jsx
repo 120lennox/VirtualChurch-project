@@ -5,6 +5,8 @@ import { FaHandHoldingUsd } from "react-icons/fa";
 import { IoStatsChartSharp } from "react-icons/io5";
 import { GiExpense } from "react-icons/gi";
 import { BiSolidDonateHeart } from "react-icons/bi";
+import { TbReport } from "react-icons/tb";
+import { FaDownload } from "react-icons/fa6";
 export default function Tithing(){
     return (
         <main className="bg-cyan-950 w-screen h-screen " >
@@ -74,13 +76,16 @@ export default function Tithing(){
                         </div>
                       </div>
                       <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  " >
-                      <div className="mt-2 w-3/6 h-1/6 bg-cyan-500 rounded-md mx-2 inline-block">
-                      <GiExpense />
-                        <p className="font-semibold text-gray-200 mx-1">Expenses</p>
+                      <div className="mt-2 w-3/5 h-1/5 bg-yellow-500 rounded-md mx-2 inline-block">
+                        
+                        <p className="font-semibold text-gray-200"><TbReport />Report</p>
                         </div>
-                      <div></div>
-                      <div></div>
+                      <div className="h-8 w-5/6 bg-cyan-500 rounded-md mt-5 mx-5 "><p className="text-gray-200 flex flex-row space-x-4 mt-1">2023-2024........<FaDownload /></p></div>
+                      <div className="h-8 w-5/6 bg-cyan-500 rounded-md mt-5 mx-5 "><p className="text-gray-200 flex flex-row space-x-4 mt-1">2024-2025........<FaDownload /></p></div>
+                      <div className="h-8 w-5/6 bg-cyan-500 rounded-md mt-5 mx-5 "><p className="text-gray-200 flex flex-row space-x-4 mt-1">2025-2026........<FaDownload /></p></div>
+                      
                       </div>
+                      
                     </div>
                     </div>
                     
