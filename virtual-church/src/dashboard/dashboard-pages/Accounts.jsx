@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Sidebar from "../Sidebar"
 import Notification from "./Notification"
 import { FaRegTrashCan } from "react-icons/fa6";
