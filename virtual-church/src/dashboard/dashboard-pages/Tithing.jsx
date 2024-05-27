@@ -4,6 +4,7 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { IoStatsChartSharp } from "react-icons/io5";
 import { GiExpense } from "react-icons/gi";
+import { BiSolidDonateHeart } from "react-icons/bi";
 export default function Tithing(){
     return (
         <main className="bg-cyan-950 w-screen h-screen " >
@@ -14,9 +15,9 @@ export default function Tithing(){
                    
                     <div className="flex flex-col mt-12 space-y-10  ">
                       <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  ">
-                        <div className="mt-2 w-3/6 h-1/6 bg-cyan-500 rounded-md mx-2 inline-block">
-                        <LiaBalanceScaleSolid />
-                        <p className="font-semibold text-gray-200 mx-1">Balance</p>
+                        <div className="mt-2 w-3/6 h-1/6 bg-yellow-500 rounded-md mx-2 inline-block">
+                        
+                        <p className="font-semibold text-gray-200 mx-1"><LiaBalanceScaleSolid />Balance</p>
                         </div>
                         <div className="mt-5 mx-2 mb-5">
                           <p  className="font-semibold text-gray-950 text-lg" aria-placeholder="balance">K0.00</p>
@@ -26,15 +27,20 @@ export default function Tithing(){
                         </div>
                       </div>
                       <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  " >
-                        <div></div>
-                        <div></div>
+                        <div className=" mt-2 mx-2 w-3/6 h-1/6 rounded-md bg-yellow-500">
+                          <p className="font-semibold text-gray-200 mx-1"> My tithe</p>
+                        </div>
+                        <div className=" mt-5 w-4/5 h-2/3 bg-cyan-500 rounded-md mx-5 inline-block">
+                        <p className="font-semibold text-gray-200 mx-1 mt-8">This month K0.00</p>
+                        <button className="rounded-md w-1/2 h-1/6 bg-cyan-800 mt-6 mx-14 mb-2"><p className="text-gray-200">History</p></button>
+                        </div>
                       </div>
                     </div>
                     <div className="flex flex-col mt-12 space-y-10  ">
                       <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  ">
-                      <div className="mt-2 w-3/6 h-1/6 bg-cyan-500 rounded-md mx-2 inline-block">
-                      <FaHandHoldingUsd />
-                        <p className="font-semibold text-gray-200 mx-1">Offerings</p>
+                      <div className="mt-2 w-3/6 h-1/6 bg-yellow-500 rounded-md mx-2 inline-block">
+                      
+                        <p className="font-semibold text-gray-200 mx-1"><FaHandHoldingUsd />Offerings</p>
                         </div>
                         <div className="mt-5 mx-2 mb-5">
                           <p  className="font-semibold text-gray-950 text-lg" aria-placeholder="balance">K0.00</p>
@@ -44,15 +50,20 @@ export default function Tithing(){
                         </div>
                       </div>
                       <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  " >
-                      <div></div>
-                      <div></div>
+                      <div className=" mt-2 mx-2 w-3/6 h-1/6 rounded-md bg-yellow-500">
+                          <p className="font-semibold text-gray-200 mx-1"><BiSolidDonateHeart />Pledges</p>
+                        </div>
+                        <div className=" mt-5 w-4/5 h-2/3 bg-cyan-500 rounded-md mx-5 inline-block">
+                        <p className="font-semibold text-gray-200 mx-1 mt-8">This month K0.00</p>
+                        <button className="rounded-md w-1/2 h-1/6 bg-cyan-800 mt-6 mx-14 mb-2"><p className="text-gray-200">History</p></button>
+                        </div>
                       </div>
                     </div>
                     <div className="flex flex-col mt-12 space-y-10  ">
                       <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  ">
-                      <div className="mt-2 w-3/6 h-1/6 bg-cyan-500 rounded-md mx-2 inline-block">
-                      <GiExpense />
-                        <p className="font-semibold text-gray-200 mx-1">Expenses</p>
+                      <div className="mt-2 w-3/6 h-1/6 bg-yellow-500 rounded-md mx-2 inline-block">
+                      
+                        <p className="font-semibold text-gray-200 mx-1"><GiExpense />Expenses</p>
                         </div>
                         <div className=" mt-2 w-3/4 h-1/3 bg-cyan-500 rounded-md mx-2 inline-block">                        
                          <p className="text-lg font-bold mx-2 mt-2 "><IoStatsChartSharp /></p>
@@ -63,7 +74,10 @@ export default function Tithing(){
                         </div>
                       </div>
                       <div className=" bg-cyan-900 h-56 w-40 rounded-lg flex-col flex  " >
-                      <div></div>
+                      <div className="mt-2 w-3/6 h-1/6 bg-cyan-500 rounded-md mx-2 inline-block">
+                      <GiExpense />
+                        <p className="font-semibold text-gray-200 mx-1">Expenses</p>
+                        </div>
                       <div></div>
                       <div></div>
                       </div>
